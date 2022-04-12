@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/KostaNS/FrontendMentor-NFT)
-- Live Site URL: [GitHub Pages](https://kostans.github.io/FrontendMentor-NFT/)
+- Solution URL: [GitHub Repository](https://github.com/KostaNS/FrontendMentor-Challenge-NFT)
+- Live Site URL: [GitHub Pages](https://kostans.github.io/FrontendMentor-Challenge-NFT//)
 
 ### Built with
 
