@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* COLORS AND FONTS */
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --overlayCyan: hsl(178, 100%, 50%, 50.3%);
+    --background: hsl(217, 54%, 11%);
+    --card: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --line: hsl(215, 32%, 27%);
+    --outfit: 'Outfit', sans-serif;
+    --light: 300;
+    --regular: 400;
+    --semiBold: 600;
+    --ease: 0.3s ease;
+    --overlay: opacity 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    background: var(--background);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--outfit);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--semiBold);
+    transition: var(--ease);
+}
+
+a:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid var(--line);
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-weight: var(--semiBold);
+    color: var(--white);
+    font-size: 1.222rem;
+    margin: 24px 0px 16px 0px;
+}
+
+p {
+    color: var(--softBlue);
+    font-size: 1rem;
+    font-weight: var(--light);
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.title {
+    padding-top: 24px;
+    transition: var(--ease);
+}
+
+.title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.nftCard {
+    padding: 24px;
+    background: var(--card);
+    width: 350px;
+    height: 596px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.nftImage {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper div {
+    position: absolute;
+    top: 0;
+    background-color: var(--overlayCyan);
+    width: 100%;
+    height: calc(100% - 5px);
+    border-radius: 8px;
+    opacity: 0;
+    transition: var(--overlay);
+}
+
+.imageWrapper div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imageWrapper div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    line-height: 18.9px;
+    font-size: 0.889rem;
+    margin-bottom: 24px;
+}
+
+.symbol {
+    font-weight: var(--semiBold);
+    color: var(--cyan);
+}
+
+.symbol::before {
+    content: url("../assets/icon-ethereum.svg");
+    float: left;
+    padding-right: 6.48px;
+}
+
+.time {
+    text-align: right;
+    font-weight: var(--regular);
+    color: var(--softBlue);
+    line-height: 18.9px;
+}
+
+.time::before {
+    content: url("../assets/icon-clock.svg");
+    padding-right: 7.7px;
+    vertical-align: middle;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-wrap: nowrap; 
+    align-content: flex-start;
+    font-weight: var(--regular);
+}
+
+.userPic {
+    width: 33px;
+    height: 33px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.createdBy {
+    color: var(--softBlue);
+}
+
+.name {
+    color: var(--white);
+    transition: var(--ease);
+}
+
+.name:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    z-index: 0;
+}
+
+.attribution {
+    color: var(--softBlue);
+    font-weight: var(--regular);
+    font-size: 0.778rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .nftCard {
+        width: 327px;
+        height: 543px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    hr {
+        margin-bottom: 10px;
+    }
+
+    .gridContainer {
+        font-size: 0.833rem;
+        margin-bottom: 16px;
+    }
+} 
