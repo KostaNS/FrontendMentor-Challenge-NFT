@@ -9,37 +9,39 @@
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-  <article class="nftCard" aria-label="mainContent">
-    <div class="imageWrapper">
-      <img class="nftImage" alt="nft image" src="./assets/image-equilibrium.jpg"/>
-      <div>
-        <img src="./assets/icon-view.svg" alt="eye icon"/>
+  <main aria-label="main">
+    <article class="nftCard" aria-label="content">
+      <div class="imageWrapper">
+        <img class="nftImage" alt="nft image" src="./assets/image-equilibrium.jpg"/>
+        <div>
+          <img src="./assets/icon-view.svg" alt="eye icon"/>
+        </div>
       </div>
-    </div>
-    <h1>
-      <span class="title">Equilibrium #3429</span>
-    </h1>
-    <p>
-      Our Equilibrium collection promotes balance and calm.
-    </p>
-    <div class="gridContainer">
-      <div class="gridChild symbol">
-        0.041 ETH
+      <h1>
+        <span class="title">Equilibrium #3429</span>
+      </h1>
+      <p>
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="gridContainer">
+        <div class="gridChild symbol">
+          0.041 ETH
+        </div>
+        <div class="gridChild time">
+          3 days left
+        </div>
       </div>
-      <div class="gridChild time">
-        3 days left
+      <hr />
+      <div class="author">
+        <div class="avatar">
+          <img class="userPic" alt="avatar" src="./assets/image-avatar.png">
+        </div>
+        <div class="details">
+          <span class="createdBy">Creation of</span> <span class="name">Jules Wyvern</span>
+        </div>
       </div>
-    </div>
-    <hr />
-    <div class="author">
-      <div class="avatar">
-        <img class="userPic" alt="avatar" src="./assets/image-avatar.png">
-      </div>
-      <div class="details">
-        <span class="createdBy">Creation of</span> <span class="name">Jules Wyvern</span>
-      </div>
-    </div>
-  </article>
+    </article>
+  </main> 
   <footer class="attribution" aria-label="copyright">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/KostaNS">KostaNS</a>.
